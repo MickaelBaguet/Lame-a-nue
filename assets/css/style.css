@@ -1,1 +1,47 @@
-test
+body {
+  font-family: 'Cinzel', serif;
+}
+header {
+  background-color: #10459C;
+  color: white;
+}
+
+h1 {
+  font-size: 350%
+}
+p {
+  font-size: 250%
+}
+
+#img {
+  float: left;
+}
+
+#button {
+  background-color: #10459C;
+  text-align: center;
+  font-size: 150%;
+}
+
+#contact {
+  width: 60px;
+  height: 60px;
+
+}
+
+.card
+{
+  /* width: 20%; */
+  cursor: pointer;
+}
+
+.card-body
+{
+  border: 1px solid red;
+}
+
+.card-img-top
+{
+  width: 18.75em;
+  height: 25em;
+}
