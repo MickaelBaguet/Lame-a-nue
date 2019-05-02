@@ -27,6 +27,9 @@ $(document).ready(function(){
     $('.prodSupport').show()
   });
 
-
+  $('#btnContact').click(function(){
+    $('.elem').hide();
+    $('.Contact').show()
+  });
 
 });
