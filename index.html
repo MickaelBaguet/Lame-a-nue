@@ -13,29 +13,59 @@
 <body>
   <!-- Header -->
   <header class="text-center">
-    <span><img src="assets/img/Logosite.png" alt="Logo" id="img"></span>
+    <span><img src="assets/img/Logosite.png" class="ml-4 mt-4 d-none d-md-flex " alt="Logo" id="img"></span>
     <div class="container">
       <h1>Lame à nue</h1>
       <p id="texte">D'estoc ou Déco</p>
     </div>
-    <div id="button">
-      <div class="container">
-        <div>
-          <button type="button" class="btn btn-outline-light" id="btnAccueil">Accueil</button>
-          <button type="button" class="btn btn-outline-light" id="btnBehourd">Lames de Béhourds</button>
-          <button type="button" class="btn btn-outline-light" id="btnFant">Lames Fantasy</button>
-          <button type="button" class="btn btn-outline-light" id="btnLaser">Sabres Lasers</button>
-          <button type="button" class="btn btn-outline-light" id="btnSupport">Supports</button>
-          <button type="button" class="btn btn-outline-light" id="btnContact">Contact</button>
-          <button type="button" class="btn btn-outline-light" id="btnPanier">Panier</button>
-        </div>
-      </div>
+      <nav class="navbar sticky-top navbar-dark">
+        <button type="button" class="btn btn-outline-light col-12 col-md-6 col-lg-4" id="btnAccueil">Accueil</button>
+        <button type="button" class="btn btn-outline-light col-12 col-md-6 col-lg-4" id="btnBehourd">Lames de Béhourds</button>
+        <button type="button" class="btn btn-outline-light col-12 col-md-6 col-lg-4" id="btnFant">Lames Fantasy</button>
+        <button type="button" class="btn btn-outline-light col-12 col-md-6 col-lg-4" id="btnLaser">Sabres Lasers</button>
+        <button type="button" class="btn btn-outline-light col-12 col-md-6 col-lg-4" id="btnSupport">Supports</button>
+        <button type="button" id="panier" class="btn btn-outline-light col-12 col-md-6 col-lg-4" data-toggle="modal" data-target="#modalPanier">Panier</button>
+      </nav>
     </div>
   </header>
-  <!-- Boutton -->
+  <!-- Modal panier-->
+        <div class="modal" id="modalPanier" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-titlePanier" id="exampleModalCenteredLabel">Votre panier :</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Articles au panier : </p>
+                <table class="table">
+                  <thead>
+                    <!-- <button type="button" class="plus">+</button><button type="button" class="moins">-</button> -->
+                    <tr>
+                      <th>Réf</th><th>Nom</th><th>Prix unit.</th><th>Qté</th><th></th>
+                    </tr>
+                  </thead>
+                  <tbody id="panierModal">
+                    <!-- Contenu du panier, vide par défaut -->
+                  </tbody>
+                </table>
+                <p>Total : <span id="priceTotal">0</span> €</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                <button type="button" class="btn btn-primary" id="emptyCart">Vider Panier</button>
+                <button type="button" class="btn btn-primary" id="buy">Acheter</button>
+              </div>
+            </div>
+          </div>
+  </div>
+
   <!-- Catégorie Béhourd -->
   <div class="card-deck my-3 prodBehourd elem text-center">
     <!-- Produit -->
+    <div class="container col-12 col-md-6 col-lg-3">
     <div class="card test" data-toggle="modal" data-target="#exampleModal">
       <span class="id" hidden>1</span>
       <span class="name" hidden>Épée à deux mains</span>
@@ -46,6 +76,8 @@
       </div>
       <div class="card-body"> Épée à deux mains </div>
     </div>
+  </div>
+  <div class="container col-12 col-md-6 col-lg-3">
     <div class="card" data-toggle="modal" data-target="#exampleModal">
       <span class="id" hidden>2</span>
       <span class="name" hidden>Épée à une main</span>
@@ -56,6 +88,8 @@
       </div>
       <div class="card-body"> Épée à une main </div>
     </div>
+  </div>
+  <div class="container col-12 col-md-6 col-lg-3">
     <div class="card" data-toggle="modal" data-target="#exampleModal">
       <span class="id" hidden>3</span>
       <span class="name" hidden>Falchion</span>
@@ -66,6 +100,8 @@
       </div>
       <div class="card-body"> Falchion </div>
     </div>
+  </div>
+  <div class="container col-12 col-md-6 col-lg-3">
     <div class="card" data-toggle="modal" data-target="#exampleModal">
       <span class="id" hidden>4</span>
       <span class="name" hidden>Hache à deux mains</span>
@@ -77,8 +113,10 @@
       <div class="card-body"> Hache à deux mains </div>
     </div>
   </div>
+  </div>
   <!-- Catégorie Fantasy -->
   <div class="card-deck my-3 prodFant elem text-center">
+    <div class="container col-12 col-md-6 col-lg-3">
     <div class="card" data-toggle="modal" data-target="#exampleModal">
       <span class="id" hidden>5</span>
       <span class="name" hidden>Dague Dragon Double Lame</span>
@@ -89,6 +127,8 @@
       </div>
       <div class="card-body"> Dague Dragon Double Lame </div>
     </div>
+  </div>
+  <div class="container col-12 col-md-6 col-lg-3">
     <div class="card" data-toggle="modal" data-target="#exampleModal">
       <span class="id" hidden>6</span>
       <span class="name" hidden>Dague Dragon Double Lame</span>
@@ -99,6 +139,8 @@
       </div>
       <div class="card-body"> Dague-Canne Dragon </div>
     </div>
+  </div>
+  <div class="container col-12 col-md-6 col-lg-3">
     <div class="card" data-toggle="modal" data-target="#exampleModal">
       <span class="id" hidden>7</span>
       <span class="name" hidden>Canne-Épée Griffe de Dragon</span>
@@ -109,6 +151,8 @@
       </div>
       <div class="card-body"> Canne-Épée Griffe de Dragon </div>
     </div>
+  </div>
+    <div class="container col-12 col-md-6 col-lg-3">
     <div class="card" data-toggle="modal" data-target="#exampleModal">
       <span class="id" hidden>8</span>
       <span class="name" hidden>Canne-Dague Crâne</span>
@@ -120,8 +164,10 @@
       <div class="card-body"> Canne-Dague Crâne </div>
     </div>
   </div>
+  </div>
   <!-- Catégorie sabre laser -->
   <div class="card-deck my-3 prodLaser elem text-center">
+    <div class="container col-12 col-md-6 col-lg-3">
     <div class="card" data-toggle="modal" data-target="#exampleModal">
       <span class="id" hidden>9</span>
       <span class="name" hidden>Sabre laser Dark Vador</span>
@@ -132,6 +178,8 @@
       </div>
       <div class="card-body"> Sabre laser Dark Vador </div>
     </div>
+  </div>
+  <div class="container col-12 col-md-6 col-lg-3">
     <div class="card" data-toggle="modal" data-target="#exampleModal">
       <span class="id" hidden>10</span>
       <span class="name" hidden>Sabre laser double Star Wars</span>
@@ -142,6 +190,8 @@
       </div>
       <div class="card-body"> Sabre laser double Star Wars </div>
     </div>
+  </div>
+  <div class="container col-12 col-md-6 col-lg-3">
     <div class="card" data-toggle="modal" data-target="#exampleModal">
       <span class="id" hidden>11</span>
       <span class="name" hidden>Sabres Laser Star Wars</span>
@@ -152,6 +202,8 @@
       </div>
       <div class="card-body"> Sabres Laser Star Wars </div>
     </div>
+  </div>
+  <div class="container col-12 col-md-6 col-lg-3">
     <div class="card" data-toggle="modal" data-target="#exampleModal">
       <span class="id" hidden>12</span>
       <span class="name" hidden>Sabres Laser Star Wars</span>
@@ -163,8 +215,10 @@
       <div class="card-body"> Sabre laser gonflable </div>
     </div>
   </div>
+  </div>
   <!-- Catégorie support -->
   <div class="card-deck my-3 prodSupport elem text-center">
+    <div class="container col-12 col-md-6 col-lg-3">
     <div class="card" data-toggle="modal" data-target="#exampleModal">
       <span class="id" hidden>13</span>
       <span class="name" hidden>Présentoir pour accrocher l´épée</span>
@@ -175,6 +229,8 @@
       </div>
       <div class="card-body"> Présentoir pour accrocher l´épée </div>
     </div>
+  </div>
+  <div class="container col-12 col-md-6 col-lg-3">
     <div class="card" data-toggle="modal" data-target="#exampleModal">
       <span class="id" hidden>14</span>
       <span class="name" hidden>Exposant pour 3 Katanas</span>
@@ -185,6 +241,8 @@
       </div>
       <div class="card-body"> Exposant pour 3 Katanas </div>
     </div>
+  </div>
+  <div class="container col-12 col-md-6 col-lg-3">
     <div class="card" data-toggle="modal" data-target="#exampleModal">
       <span class="id" hidden>15</span>
       <span class="name" hidden>Cintre métal pour épée</span>
@@ -195,6 +253,8 @@
       </div>
       <div class="card-body"> Cintre métal pour épée </div>
     </div>
+  </div>
+  <div class="container col-12 col-md-6 col-lg-3">
     <div class="card" data-toggle="modal" data-target="#exampleModal">
       <span class="id" hidden>16</span>
       <span class="name" hidden>Suport pour 1 coupe-papier ou un mini épée</span>
@@ -205,6 +265,7 @@
       </div>
       <div class="card-body"> Suport pour 1 coupe-papier ou un mini épée </div>
     </div>
+  </div>
   </div>
 
   <!-- Modal type -->
@@ -270,15 +331,15 @@
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <video src="assets/video/textfiction.mp4" autoplay poster="posterimage.jpg" muted loop>
+          <video class="img-fluid" src="assets/video/textfiction.mp4" autoplay poster="posterimage.jpg" muted loop>
           </video>
         </div>
         <div class="carousel-item">
-          <video src="assets/video/video2.mp4" autoplay poster="posterimage.jpg" muted loop>
+          <video class="img-fluid" src="assets/video/video2.mp4" autoplay poster="posterimage.jpg" muted loop>
           </video>
         </div>
         <div class="carousel-item">
-          <video src="assets/video/video3.mp4" autoplay poster="posterimage.jpg" muted loop>
+          <video class="img-fluid" src="assets/video/video3.mp4" autoplay poster="posterimage.jpg" muted loop>
           </video>
         </div>
       </div>
@@ -303,6 +364,9 @@
           <p><img src="https://image.flaticon.com/icons/png/512/33/33962.png" alt="Téléphone" title="Téléphone" id="contact"/> 03.34.65.12.73</p>
         </div>
       </div>
+    </div>
+    <div class="container-fluid">
+      <p>Mickael, Flavien, Sonia</p>
     </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
