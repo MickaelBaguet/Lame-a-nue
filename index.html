@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon-96x96.png">
   <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -15,270 +16,294 @@
     <span><img src="assets/img/Logosite.png" alt="Logo" id="img"></span>
     <div class="container">
       <h1>Lame à nue</h1>
-      <p>D'estoc ou Déco</p>
+      <p id="texte">D'estoc ou Déco</p>
+    </div>
+    <div id="button">
+      <div class="container">
+        <div>
+          <button type="button" class="btn btn-outline-light" id="btnAccueil">Accueil</button>
+          <button type="button" class="btn btn-outline-light" id="btnBehourd">Lames de Béhourds</button>
+          <button type="button" class="btn btn-outline-light" id="btnFant">Lames Fantasy</button>
+          <button type="button" class="btn btn-outline-light" id="btnLaser">Sabres Lasers</button>
+          <button type="button" class="btn btn-outline-light" id="btnSupport">Supports</button>
+          <button type="button" class="btn btn-outline-light" id="btnContact">Contact</button>
+          <button type="button" class="btn btn-outline-light" id="btnPanier">Panier</button>
+        </div>
+      </div>
     </div>
   </header>
   <!-- Boutton -->
-  <div id="button">
-    <div class="container">
-      <div>
-        <button type="button" class="btn btn-outline-light" id="btnAccueil">Accueil</button>
-        <button type="button" class="btn btn-outline-light" id="btnBehourd">Lames de Béhourds</button>
-        <button type="button" class="btn btn-outline-light" id="btnFant">Lames Fantasy</button>
-        <button type="button" class="btn btn-outline-light" id="btnLaser">Sabres Lasers</button>
-        <button type="button" class="btn btn-outline-light" id="btnSupport">Supports</button>
-        <button type="button" class="btn btn-outline-light" id="btnContact">Contact</button>
-        <button type="button" class="btn btn-outline-light" id="btnPanier">Panier</button>
+  <!-- Catégorie Béhourd -->
+  <div class="card-deck my-3 prodBehourd elem text-center">
+    <!-- Produit -->
+    <div class="card test" data-toggle="modal" data-target="#exampleModal">
+      <span class="id" hidden>1</span>
+      <span class="name" hidden>Épée à deux mains</span>
+      <span class="descL" hidden>Grande épée qui fait mal !</span>
+      <span class="price" hidden>120</span>
+      <div class="text-center">
+        <img class="card-img-top" src="assets/img/deux-mains2.png" alt="Card image cap">
+      </div>
+      <div class="card-body"> Épée à deux mains </div>
+    </div>
+    <div class="card" data-toggle="modal" data-target="#exampleModal">
+      <span class="id" hidden>2</span>
+      <span class="name" hidden>Épée à une main</span>
+      <span class="descL" hidden>Épée plus petit et plus rapide !</span>
+      <span class="price" hidden>80</span>
+      <div class="text-center">
+        <img class="card-img-top" src="assets/img/epee.jpg" alt="Card image cap">
+      </div>
+      <div class="card-body"> Épée à une main </div>
+    </div>
+    <div class="card" data-toggle="modal" data-target="#exampleModal">
+      <span class="id" hidden>3</span>
+      <span class="name" hidden>Falchion</span>
+      <span class="descL" hidden>Sabre droit ou légèrement recourbée. La lame s'élargit jusqu'à la pointe et disposait souvent d'un contre-tranchant permettant de donner des coups de revers.</span>
+      <span class="price" hidden>90</span>
+      <div class="text-center">
+        <img class="card-img-top" src="assets/img/falchion-buhurt.jpg" alt="Card image cap">
+      </div>
+      <div class="card-body"> Falchion </div>
+    </div>
+    <div class="card" data-toggle="modal" data-target="#exampleModal">
+      <span class="id" hidden>4</span>
+      <span class="name" hidden>Hache à deux mains</span>
+      <span class="descL" hidden>Hache médiévale à double tranchant en acier forgé, de haute qualité, livrée avec des gaines protectrices en cuir épais.</span>
+      <span class="price" hidden>95</span>
+      <div class="text-center">
+        <img class="card-img-top" src="assets/img/hache.jpg" alt="Card image cap">
+      </div>
+      <div class="card-body"> Hache à deux mains </div>
+    </div>
+  </div>
+  <!-- Catégorie Fantasy -->
+  <div class="card-deck my-3 prodFant elem text-center">
+    <div class="card" data-toggle="modal" data-target="#exampleModal">
+      <span class="id" hidden>5</span>
+      <span class="name" hidden>Dague Dragon Double Lame</span>
+      <span class="descL" hidden>Magnifique ensemble de 2 dagues double lames dragon. Lames en acier stainless noir 440 avec ornement en metal et une partie recouvert de simili cuir.</span>
+      <span class="price" hidden>70</span>
+      <div class="text-center">
+        <img class="card-img-top" src="assets/img/f1.jpeg" alt="Card image cap">
+      </div>
+      <div class="card-body"> Dague Dragon Double Lame </div>
+    </div>
+    <div class="card" data-toggle="modal" data-target="#exampleModal">
+      <span class="id" hidden>6</span>
+      <span class="name" hidden>Dague Dragon Double Lame</span>
+      <span class="descL" hidden>Dague-Canne dragon avec son fourreau. Acier Inoxydable 440</span>
+      <span class="price" hidden>40</span>
+      <div class="text-center">
+        <img class="card-img-top" src="assets/img/f2.jpeg" alt="Card image cap">
+      </div>
+      <div class="card-body"> Dague-Canne Dragon </div>
+    </div>
+    <div class="card" data-toggle="modal" data-target="#exampleModal">
+      <span class="id" hidden>7</span>
+      <span class="name" hidden>Canne-Épée Griffe de Dragon</span>
+      <span class="descL" hidden>Le fût et le pommeau sont en métal. Le pommeau représente une griffe de dragon serrant une boule de cristal. La lame est en acier inoxydable 440 B, non tranchante. Le manche se devisse pour laisser apparaitre l'épée. Dimension totale L95cm.</span>
+      <span class="price" hidden>30</span>
+      <div class="text-center">
+        <img class="card-img-top" src="assets/img/f3.jpeg" alt="Card image cap">
+      </div>
+      <div class="card-body"> Canne-Épée Griffe de Dragon </div>
+    </div>
+    <div class="card" data-toggle="modal" data-target="#exampleModal">
+      <span class="id" hidden>8</span>
+      <span class="name" hidden>Canne-Dague Crâne</span>
+      <span class="descL" hidden>Dague-Canne avec son fourreau. Acier Inoxydable 440.</span>
+      <span class="price" hidden>32</span>
+      <div class="text-center">
+        <img class="card-img-top" src="assets/img/f4.jpeg" alt="Card image cap">
+      </div>
+      <div class="card-body"> Canne-Dague Crâne </div>
+    </div>
+  </div>
+  <!-- Catégorie sabre laser -->
+  <div class="card-deck my-3 prodLaser elem text-center">
+    <div class="card" data-toggle="modal" data-target="#exampleModal">
+      <span class="id" hidden>9</span>
+      <span class="name" hidden>Sabre laser Dark Vador</span>
+      <span class="descL" hidden>Partez défendre le côté obscur de la force avec ce sabre laser de Dark Vador. Ce sabre laser Dark Vador fera de vous un héros de la guerre des étoiles. Baculez du côté obscur de la force avec cette épée laser Darth vader. Que la force soit avec vous !</span>
+      <span class="price" hidden>15</span>
+      <div class="text-center">
+        <img class="card-img-top" src="assets/img/laser1.jpg" alt="Laser 1">
+      </div>
+      <div class="card-body"> Sabre laser Dark Vador </div>
+    </div>
+    <div class="card" data-toggle="modal" data-target="#exampleModal">
+      <span class="id" hidden>10</span>
+      <span class="name" hidden>Sabre laser double Star Wars</span>
+      <span class="descL" hidden>Passez du côté obscur de la Force avec ce sabre laser double et devenez un maître Sith comme Darth Maul ! Ce sabre reprend le style du sabre laser de Darth Maul, tiré de la saga Star Wars !</span>
+      <span class="price" hidden>13.90</span>
+      <div class="text-center">
+        <img class="card-img-top" src="assets/img/l2.jpg" alt="Laser 2">
+      </div>
+      <div class="card-body"> Sabre laser double Star Wars </div>
+    </div>
+    <div class="card" data-toggle="modal" data-target="#exampleModal">
+      <span class="id" hidden>11</span>
+      <span class="name" hidden>Sabres Laser Star Wars</span>
+      <span class="descL" hidden>Mettez-vous dans la peau d'un Jedi avec ce sabre laser customisable ! Grâce aux sabres laser à lame extensible Star Wars Bladebuilders, on peut plonger dans les aventures épiques de l'univers Star Wars !</span>
+      <span class="price" hidden>18.90</span>
+      <div class="text-center">
+        <img class="card-img-top" src="assets/img/l3.jpg" alt="Laser 3">
+      </div>
+      <div class="card-body"> Sabres Laser Star Wars </div>
+    </div>
+    <div class="card" data-toggle="modal" data-target="#exampleModal">
+      <span class="id" hidden>12</span>
+      <span class="name" hidden>Sabres Laser Star Wars</span>
+      <span class="descL" hidden>Pour imiter votre héros préféré ! Ce sabre laser gonflable est en plastique. Il mesure environ 80 cm de longueur. Le manche est de couleur noir et gris avec des petits motifs et le sabre est de couleur vert transparent.</span>
+      <span class="price" hidden>18.90</span>
+      <div class="text-center">
+        <img class="card-img-top" src="assets/img/l4.jpg" alt="Laser 4">
+      </div>
+      <div class="card-body"> Sabre laser gonflable </div>
+    </div>
+  </div>
+  <!-- Catégorie support -->
+  <div class="card-deck my-3 prodSupport elem text-center">
+    <div class="card" data-toggle="modal" data-target="#exampleModal">
+      <span class="id" hidden>13</span>
+      <span class="name" hidden>Présentoir pour accrocher l´épée</span>
+      <span class="descL" hidden>Présentoir en métal pour accrocher l´épée à la verticale.</span>
+      <span class="price" hidden>8.90</span>
+      <div class="text-center">
+        <img class="card-img-top" src="assets/img/s1.jpg" alt="Laser 1">
+      </div>
+      <div class="card-body"> Présentoir pour accrocher l´épée </div>
+    </div>
+    <div class="card" data-toggle="modal" data-target="#exampleModal">
+      <span class="id" hidden>14</span>
+      <span class="name" hidden>Exposant pour 3 Katanas</span>
+      <span class="descL" hidden>Affichage en bois pour 3 katanas. Exposant de bureau fait de bois et laqué. 3 pièces.</span>
+      <span class="price" hidden>17.90</span>
+      <div class="text-center">
+        <img class="card-img-top" src="assets/img/s2.jpg" alt="Laser 2">
+      </div>
+      <div class="card-body"> Exposant pour 3 Katanas </div>
+    </div>
+    <div class="card" data-toggle="modal" data-target="#exampleModal">
+      <span class="id" hidden>15</span>
+      <span class="name" hidden>Cintre métal pour épée</span>
+      <span class="descL" hidden>Cintre en métal pour l´épée.</span>
+      <span class="price" hidden>14.50</span>
+      <div class="text-center">
+        <img class="card-img-top" src="assets/img/s3.jpg" alt="Laser 3">
+      </div>
+      <div class="card-body"> Cintre métal pour épée </div>
+    </div>
+    <div class="card" data-toggle="modal" data-target="#exampleModal">
+      <span class="id" hidden>16</span>
+      <span class="name" hidden>Suport pour 1 coupe-papier ou un mini épée</span>
+      <span class="descL" hidden>Support métallique pour maintenir un Coupe-papier à la verticale.</span>
+      <span class="price" hidden>4.50</span>
+      <div class="text-center">
+        <img class="card-img-top" src="assets/img/s4.jpg" alt="Laser 4">
+      </div>
+      <div class="card-body"> Suport pour 1 coupe-papier ou un mini épée </div>
+    </div>
+  </div>
+
+  <!-- Modal type -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- Titre -->
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <!-- Image modal -->
+          <img class="card-img-top" src="" alt="">
+          <!-- Description longue -->
+          <p class="descLM"></p>
+          <!-- Prix -->
+          <p>Prix : <span class="priceM"></span><span> €</span></p>
+          <label>Quantité :
+            <select class="" name="quantite">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </label>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+          <button type="button" class="btn btn-primary ajout">Ajouter au panier</button>
+        </div>
       </div>
     </div>
   </div>
-  <!-- Catégorie Béhourd -->
-      <div class="card-deck my-3 prodBehourd elem text-center">
-        <!-- Produit -->
-        <div class="card test" data-toggle="modal" data-target="#exampleModal">
-          <span class="id" hidden>1</span>
-          <span class="name" hidden>Épée à deux mains</span>
-          <span class="descL" hidden>Grande épée qui fait mal !</span>
-          <span class="price" hidden>120</span>
-          <div class="text-center">
-          <img class="card-img-top" src="assets/img/deux-mains2.png" alt="Card image cap">
-          </div>
-          <div class="card-body"> Épée à deux mains </div>
-        </div>
-        <div class="card" data-toggle="modal" data-target="#exampleModal">
-          <span class="id" hidden>2</span>
-          <span class="name" hidden>Épée à une main</span>
-          <span class="descL" hidden>Épée plus petit et plus rapide !</span>
-          <span class="price" hidden>80</span>
-          <div class="text-center">
-          <img class="card-img-top" src="assets/img/epee.jpg" alt="Card image cap">
-          </div>
-          <div class="card-body"> Épée à une main </div>
-        </div>
-        <div class="card" data-toggle="modal" data-target="#exampleModal">
-          <span class="id" hidden>3</span>
-          <span class="name" hidden>Falchion</span>
-          <span class="descL" hidden>Sabre droit ou légèrement recourbée. La lame s'élargit jusqu'à la pointe et disposait souvent d'un contre-tranchant permettant de donner des coups de revers.</span>
-          <span class="price" hidden>90</span>
-          <div class="text-center">
-          <img class="card-img-top" src="assets/img/falchion-buhurt.jpg" alt="Card image cap">
-          </div>
-          <div class="card-body"> Falchion </div>
-        </div>
-        <div class="card" data-toggle="modal" data-target="#exampleModal">
-          <span class="id" hidden>4</span>
-          <span class="name" hidden>Hache à deux mains</span>
-          <span class="descL" hidden>Hache médiévale à double tranchant en acier forgé, de haute qualité, livrée avec des gaines protectrices en cuir épais.</span>
-          <span class="price" hidden>95</span>
-          <div class="text-center">
-          <img class="card-img-top" src="assets/img/hache.jpg" alt="Card image cap">
-          </div>
-          <div class="card-body"> Hache à deux mains </div>
-        </div>
-      </div>
-      <!-- Catégorie Fantasy -->
-      <div class="card-deck my-3 prodFant elem text-center">
-        <div class="card" data-toggle="modal" data-target="#exampleModal">
-          <span class="id" hidden>5</span>
-          <span class="name" hidden>Dague Dragon Double Lame</span>
-          <span class="descL" hidden>Magnifique ensemble de 2 dagues double lames dragon. Lames en acier stainless noir 440 avec ornement en metal et une partie recouvert de simili cuir.</span>
-          <span class="price" hidden>70</span>
-          <div class="text-center">
-          <img class="card-img-top" src="assets/img/f1.jpeg" alt="Card image cap">
-          </div>
-          <div class="card-body"> Dague Dragon Double Lame </div>
-        </div>
-        <div class="card" data-toggle="modal" data-target="#exampleModal">
-          <span class="id" hidden>6</span>
-          <span class="name" hidden>Dague Dragon Double Lame</span>
-          <span class="descL" hidden>Dague-Canne dragon avec son fourreau. Acier Inoxydable 440</span>
-          <span class="price" hidden>40</span>
-          <div class="text-center">
-          <img class="card-img-top" src="assets/img/f2.jpeg" alt="Card image cap">
-          </div>
-          <div class="card-body"> Dague-Canne Dragon </div>
-        </div>
-        <div class="card" data-toggle="modal" data-target="#exampleModal">
-          <span class="id" hidden>7</span>
-          <span class="name" hidden>Canne-Épée Griffe de Dragon</span>
-          <span class="descL" hidden>Le fût et le pommeau sont en métal. Le pommeau représente une griffe de dragon serrant une boule de cristal. La lame est en acier inoxydable 440 B, non tranchante. Le manche se devisse pour laisser apparaitre l'épée. Dimension totale L95cm.</span>
-          <span class="price" hidden>30</span>
-          <div class="text-center">
-          <img class="card-img-top" src="assets/img/f3.jpeg" alt="Card image cap">
-          </div>
-          <div class="card-body"> Canne-Épée Griffe de Dragon </div>
-        </div>
-        <div class="card" data-toggle="modal" data-target="#exampleModal">
-          <span class="id" hidden>8</span>
-          <span class="name" hidden>Canne-Dague Crâne</span>
-          <span class="descL" hidden>Dague-Canne avec son fourreau. Acier Inoxydable 440.</span>
-          <span class="price" hidden>32</span>
-          <div class="text-center">
-          <img class="card-img-top" src="assets/img/f4.jpeg" alt="Card image cap">
-          </div>
-          <div class="card-body"> Canne-Dague Crâne </div>
-        </div>
-      </div>
-      <!-- Catégorie sabre laser -->
-      <div class="card-deck my-3 prodLaser elem text-center">
-        <div class="card" data-toggle="modal" data-target="#exampleModal">
-          <span class="id" hidden>9</span>
-          <span class="name" hidden>Sabre laser Dark Vador</span>
-          <span class="descL" hidden>Partez défendre le côté obscur de la force avec ce sabre laser de Dark Vador. Ce sabre laser Dark Vador fera de vous un héros de la guerre des étoiles. Baculez du côté obscur de la force avec cette épée laser Darth vader. Que la force soit avec vous !</span>
-          <span class="price" hidden>15</span>
-          <div class="text-center">
-          <img class="card-img-top" src="assets/img/laser1.jpg" alt="Laser 1">
-          </div>
-          <div class="card-body"> Sabre laser Dark Vador </div>
-        </div>
-        <div class="card" data-toggle="modal" data-target="#exampleModal">
-          <span class="id" hidden>10</span>
-          <span class="name" hidden>Sabre laser double Star Wars</span>
-          <span class="descL" hidden>Passez du côté obscur de la Force avec ce sabre laser double et devenez un maître Sith comme Darth Maul ! Ce sabre reprend le style du sabre laser de Darth Maul, tiré de la saga Star Wars !</span>
-          <span class="price" hidden>13.90</span>
-          <div class="text-center">
-          <img class="card-img-top" src="assets/img/l2.jpg" alt="Laser 2">
-          </div>
-          <div class="card-body"> Sabre laser double Star Wars </div>
-        </div>
-        <div class="card" data-toggle="modal" data-target="#exampleModal">
-          <span class="id" hidden>11</span>
-          <span class="name" hidden>Sabres Laser Star Wars</span>
-          <span class="descL" hidden>Mettez-vous dans la peau d'un Jedi avec ce sabre laser customisable ! Grâce aux sabres laser à lame extensible Star Wars Bladebuilders, on peut plonger dans les aventures épiques de l'univers Star Wars !</span>
-          <span class="price" hidden>18.90</span>
-          <div class="text-center">
-          <img class="card-img-top" src="assets/img/l3.jpg" alt="Laser 3">
-          </div>
-          <div class="card-body"> Sabres Laser Star Wars </div>
-        </div>
-        <div class="card" data-toggle="modal" data-target="#exampleModal">
-          <span class="id" hidden>12</span>
-          <span class="name" hidden>Sabres Laser Star Wars</span>
-          <span class="descL" hidden>Pour imiter votre héros préféré ! Ce sabre laser gonflable est en plastique. Il mesure environ 80 cm de longueur. Le manche est de couleur noir et gris avec des petits motifs et le sabre est de couleur vert transparent.</span>
-          <span class="price" hidden>18.90</span>
-          <div class="text-center">
-          <img class="card-img-top" src="assets/img/l4.jpg" alt="Laser 4">
-          </div>
-          <div class="card-body"> Sabre laser gonflable </div>
-        </div>
-      </div>
-      <!-- Catégorie support -->
-      <div class="card-deck my-3 prodSupport elem text-center">
-        <div class="card" data-toggle="modal" data-target="#exampleModal">
-          <span class="id" hidden>13</span>
-          <span class="name" hidden>Présentoir pour accrocher l´épée</span>
-          <span class="descL" hidden>Présentoir en métal pour accrocher l´épée à la verticale.</span>
-          <span class="price" hidden>8.90</span>
-          <div class="text-center">
-          <img class="card-img-top" src="assets/img/s1.jpg" alt="Laser 1">
-          </div>
-          <div class="card-body"> Présentoir pour accrocher l´épée </div>
-        </div>
-        <div class="card" data-toggle="modal" data-target="#exampleModal">
-          <span class="id" hidden>14</span>
-          <span class="name" hidden>Exposant pour 3 Katanas</span>
-          <span class="descL" hidden>Affichage en bois pour 3 katanas. Exposant de bureau fait de bois et laqué. 3 pièces.</span>
-          <span class="price" hidden>17.90</span>
-          <div class="text-center">
-          <img class="card-img-top" src="assets/img/s2.jpg" alt="Laser 2">
-          </div>
-          <div class="card-body"> Exposant pour 3 Katanas </div>
-        </div>
-        <div class="card" data-toggle="modal" data-target="#exampleModal">
-          <span class="id" hidden>15</span>
-          <span class="name" hidden>Cintre métal pour épée</span>
-          <span class="descL" hidden>Cintre en métal pour l´épée.</span>
-          <span class="price" hidden>14.50</span>
-          <div class="text-center">
-          <img class="card-img-top" src="assets/img/s3.jpg" alt="Laser 3">
-          </div>
-          <div class="card-body"> Cintre métal pour épée </div>
-        </div>
-        <div class="card" data-toggle="modal" data-target="#exampleModal">
-          <span class="id" hidden>16</span>
-          <span class="name" hidden>Suport pour 1 coupe-papier ou un mini épée</span>
-          <span class="descL" hidden>Support métallique pour maintenir un Coupe-papier à la verticale.</span>
-          <span class="price" hidden>4.50</span>
-          <div class="text-center">
-          <img class="card-img-top" src="assets/img/s4.jpg" alt="Laser 4">
-          </div>
-          <div class="card-body"> Suport pour 1 coupe-papier ou un mini épée </div>
-        </div>
-      </div>
-
-      <!-- Modal type -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <!-- Titre -->
-              <h5 class="modal-title" id="exampleModalLabel"></h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body text-center">
-              <!-- Image modal -->
-              <img class="card-img-top" src="" alt="">
-              <!-- Description longue -->
-              <p class="descLM"></p>
-              <!-- Prix -->
-              <p>Prix : <span class="priceM"></span><span> €</span></p>
-              <label>Quantité :
-                <select class="" name="quantite">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                </select>
-              </label>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-              <button type="button" class="btn btn-primary ajout">Ajouter au panier</button>
-            </div>
-          </div>
-        </div>
-</div>
-<!-- Catégorie contact -->
-<div class="d-flex justify-content-center">
+  <!-- Catégorie contact -->
+  <div class="d-flex justify-content-center">
     <div class="card-deck my-3 Contact elem text-center">
-    <form novalidate>
-      <div class="form-group">
-        <label for="Name">Nom</label>
-        <input required type="text" class="form-control" id="Name"  placeholder="Entrer nom">
-      </div>
-      <div class="form-group">
-        <label for="firstName">Prénom</label>
-        <input required type="text" class="form-control" id="firstName" placeholder="Entrer prénom">
-      </div>
-      <div class="form-group">
-        <label for="Email">Adresse Mail</label>
-        <input required type="email" class="form-control" id="Email" placeholder="Entrer adresse mail">
-      </div>
-      <div class="form-group">
-        <label for="Message">Message</label>
-        <input required type="text" class="form-control" id="message" placeholder="Entrer votre message">
-      </div>
-      <button type="submit" class="btn btn-primary">Valider</button>
-    </form>
+      <form novalidate>
+        <div class="form-group">
+          <label for="Name">Nom</label>
+          <input required type="text" class="form-control" id="Name"  placeholder="Entrer votre nom">
+        </div>
+        <div class="form-group">
+          <label for="firstName">Prénom</label>
+          <input required type="text" class="form-control" id="firstName" placeholder="Entrer votre prénom">
+        </div>
+        <div class="form-group">
+          <label for="Email">Adresse Mail</label>
+          <input required type="email" class="form-control" id="Email" placeholder="Entrer votre mail">
+        </div>
+        <div class="form-group">
+          <label for="Message">Message</label>
+          <input required type="text" class="form-control" id="message" placeholder="Entrer votre message">
+        </div>
+        <button type="submit" class="btn btn-primary">Valider</button>
+      </form>
+    </div>
   </div>
+  <div class="container text-center bg-dark carourou mt-3">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <video src="assets/video/textfiction.mp4" autoplay poster="posterimage.jpg" muted loop>
+          </video>
+        </div>
+        <div class="carousel-item">
+          <video src="assets/video/video2.mp4" autoplay poster="posterimage.jpg" muted loop>
+          </video>
+        </div>
+        <div class="carousel-item">
+          <video src="assets/video/video3.mp4" autoplay poster="posterimage.jpg" muted loop>
+          </video>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
   </div>
+  <!-- Footer -->
   <footer>
-    <div class="container-fluid bg-dark my-5 text-center">
+    <div class="container-fluid bg-dark my-5 text-center contact">
       <div class="row">
-        <h2>Contact</h1>
+        <div class="col-sm-6 my-4 text-white">
+          <p><img src="https://image.flaticon.com/icons/png/512/108/108370.png" alt="Mail" title="Mail" id="contact"/> lameanue@gmail.com</p>
         </div>
-        <div class="row">
-          <div class="col-sm-6 my-4 text-white">
-            <p><img src="https://image.flaticon.com/icons/png/512/108/108370.png" alt="Mail" title="Mail" id="contact"/> lameanue@gmail.com</p>
-          </div>
-          <div class="col-sm-6 my-4 text-white">
-            <p><img src="https://image.flaticon.com/icons/png/512/33/33962.png" alt="Téléphone" title="Téléphone" id="contact"/> 03.34.65.12.73</p>
-          </div>
+        <div class="col-sm-6 my-4 text-white">
+          <p><img src="https://image.flaticon.com/icons/png/512/33/33962.png" alt="Téléphone" title="Téléphone" id="contact"/> 03.34.65.12.73</p>
         </div>
       </div>
+    </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
