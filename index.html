@@ -29,37 +29,37 @@
     </div>
   </header>
   <!-- Modal panier-->
-        <div class="modal" id="modalPanier" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-titlePanier" id="exampleModalCenteredLabel">Votre panier :</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <p>Articles au panier : </p>
-                <table class="table">
-                  <thead>
-                    <!-- <button type="button" class="plus">+</button><button type="button" class="moins">-</button> -->
-                    <tr>
-                      <th>Réf</th><th>Nom</th><th>Prix unit.</th><th>Qté</th><th></th>
-                    </tr>
-                  </thead>
-                  <tbody id="panierModal">
-                    <!-- Contenu du panier, vide par défaut -->
-                  </tbody>
-                </table>
-                <p>Total : <span id="priceTotal">0</span> €</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-                <button type="button" class="btn btn-primary" id="emptyCart">Vider Panier</button>
-                <button type="button" class="btn btn-primary" id="buy">Acheter</button>
-              </div>
-            </div>
-          </div>
+  <div class="modal" id="modalPanier" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-titlePanier" id="exampleModalCenteredLabel">Votre panier :</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Articles au panier : </p>
+          <table class="table">
+            <thead>
+              <!-- <button type="button" class="plus">+</button><button type="button" class="moins">-</button> -->
+              <tr>
+                <th>Réf</th><th>Nom</th><th>Prix unit.</th><th>Qté</th><th></th>
+              </tr>
+            </thead>
+            <tbody id="panierModal">
+              <!-- Contenu du panier, vide par défaut -->
+            </tbody>
+          </table>
+          <p>Total : <span id="priceTotal">0</span> €</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+          <button type="button" class="btn btn-primary" id="emptyCart">Vider Panier</button>
+          <button type="button" class="btn btn-primary" id="buy">Acheter</button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Catégorie Béhourd -->
@@ -354,20 +354,22 @@
     </div>
   </div>
   <!-- Footer -->
-  <footer>
-    <div class="container-fluid bg-dark my-5 text-center contact">
-      <div class="row">
-        <div class="col-sm-6 my-4 text-white">
-          <p><img src="https://image.flaticon.com/icons/png/512/108/108370.png" alt="Mail" title="Mail" id="contact"/> lameanue@gmail.com</p>
+    <footer class="container-fluid page-footer mt-4 pt-2 footercontact">
+        <!-- Grid column -->
+        <div class="text-center">
+
+          <!-- Content -->
+          <h5 class="text-uppercase">Lame à Nue</h5>
+          <p class="contact"> mail : lameanue@gmail.com</p>
+          <p class="contact">tel : 0345675424</p>
         </div>
-        <div class="col-sm-6 my-4 text-white">
-          <p><img src="https://image.flaticon.com/icons/png/512/33/33962.png" alt="Téléphone" title="Téléphone" id="contact"/> 03.34.65.12.73</p>
-        </div>
-      </div>
+    <!-- Copyright -->
+    <div class="container text-center">
+    <div class="footer-copyright">© 2019 Copyright: Mickael, Flavien, Sonia.
+      <a href="https://github.com/la-manu-amiens-promo-2/Lame-a-nue%22%3EGitHub"> Projet e-Commerce</a>
     </div>
-    <div class="container-fluid">
-      <p>Mickael, Flavien, Sonia</p>
     </div>
+
   </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

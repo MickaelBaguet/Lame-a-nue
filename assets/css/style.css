@@ -25,14 +25,6 @@ h1 {
   font-size: 150%;
 }
 
-#contact {
-  width: 60px;
-  height: 60px;
-}
-
-.contact {
-  height: 100px
-}
 
 .card
 {
@@ -81,4 +73,11 @@ h1 {
 .card:hover{
     -webkit-transform: scale(1.05);
      transform: scale(1.05);
+}
+.contact{
+  font-size: 15px;
+}
+.footercontact{
+  background-color: #343A40;
+  color: white;
 }
